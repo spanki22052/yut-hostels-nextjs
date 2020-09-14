@@ -1,0 +1,35 @@
+.searchBarBlock {
+	position: relative;
+	.searchBar {
+		border-radius: 20px;
+		border: none;
+		outline: none;
+		padding-left: 20px;
+		height: 55px;
+		width: 100%;
+	}
+	.searchIconBlock {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 65px;
+		background: #988a7a;
+		border-radius: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.searchIcon {
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+		}
+		&:hover {
+			background: rgb(152, 138, 122, 0.6);
+		}
+		&:active {
+			background: rgb(152, 138, 122, 0.8);
+		}
+	}
+}

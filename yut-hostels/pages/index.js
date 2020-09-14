@@ -1,4 +1,5 @@
 import Nav from "../components/nav";
+import SearchBar from "../components/searchBar";
 
 export default function MainPage() {
 	return (
@@ -6,6 +7,7 @@ export default function MainPage() {
 			<Nav>
 				<div className='title'>Привет, дорогой гость!</div>
 				<div className='suptitle'>Ищешь комфортный, приятный, хостел, расположенный около метро?</div>
+				<SearchBar />
 			</Nav >
 			<style jsx>{`
 				.title {
@@ -15,6 +17,7 @@ export default function MainPage() {
 					font-size: 34px;
 					line-height: 41px;
 					margin-bottom: 5px;
+					color: #535048;
 				}
 
 				.suptitle {
@@ -23,6 +26,7 @@ export default function MainPage() {
 					font-weight: 500;
 					font-size: 26px;
 					line-height: 32px;
+					color: #988A7A;
 				}
 	`}</style>
 		</>
