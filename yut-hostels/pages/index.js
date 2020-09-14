@@ -1,5 +1,6 @@
 import Nav from "../components/nav";
 import SearchBar from "../components/searchBar";
+import Link from 'next/link'
 
 export default function MainPage() {
 	return (
@@ -7,6 +8,7 @@ export default function MainPage() {
 			<Nav>
 				<div className='title'>Привет, дорогой гость!</div>
 				<div className='suptitle'>Ищешь комфортный, приятный, хостел, расположенный около метро?</div>
+                <Link href="/admin"><a>Перейти на админку</a></Link>
 				<SearchBar />
 			</Nav >
 			<style jsx>{`
