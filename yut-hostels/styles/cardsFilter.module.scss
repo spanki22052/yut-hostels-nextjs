@@ -1,0 +1,88 @@
+.cardList {
+	list-style-type: none;
+	display: flex;
+	li {
+		margin-right: 70px;
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		line-height: 32px;
+		cursor: pointer;
+		&.activeCard {
+			font-weight: bold;
+		}
+	}
+	li:last-child {
+		margin-right: none;
+	}
+}
+
+.cardItemBlock {
+	margin-top: 41px;
+	height: 500px;
+	overflow: auto;
+	.cardItem {
+		margin-right: 10px;
+		height: 250px;
+		border-radius: 20px;
+		background: #ffffff;
+		position: relative;
+		margin-top: 50px;
+		.cardItemContent {
+			margin-left: 300px;
+			.cardItemTitle {
+				font-family: "Montserrat", sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 30px;
+				line-height: 44px;
+			}
+			.cardItemSuptitle {
+				font-family: "Montserrat", sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 25px;
+				line-height: 30px;
+				margin-bottom: 80px;
+				color: rgba(0, 0, 0, 0.7);
+			}
+			.cardItemInfo {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-right: 34px;
+				.cardItemLocation {
+					font-family: "Montserrat", sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 25px;
+					line-height: 30px;
+					color: rgba(0, 0, 0, 0.7);
+				}
+				.cardItemPrice {
+					font-family: "Montserrat", sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 26px;
+					line-height: 44px;
+				}
+			}
+		}
+		.cardItemSvgBlock {
+			height: 100%;
+			max-width: 250px;
+			width: 100%;
+			background: #f3d5b1;
+			border-radius: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.cardItemSvg {
+			}
+		}
+	}
+}

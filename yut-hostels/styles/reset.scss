@@ -67,3 +67,19 @@ textarea,
 select {
 	font: inherit;
 }
+
+body {
+	background: #f7f2e7;
+
+	::-webkit-scrollbar {
+		width: 24px; /* ширина для вертикального скролла */
+		height: 1px; /* высота для горизонтального скролла */
+		background: #f7f2e7;
+	}
+
+	/* ползунок скроллбара */
+	::-webkit-scrollbar-thumb {
+		background: #988a7a;
+		border-radius: 9em;
+	}
+}
