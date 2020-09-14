@@ -1,0 +1,48 @@
+.wrapper {
+	background: #f7f2e7;
+	height: 100vh;
+	.container {
+		padding-top: 34px;
+		max-width: 1250px;
+		margin: 0 auto;
+		.nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 0.5px solid #bfaf9c;
+			.navLogo {
+				font-family: "Playfair Display", serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 54px;
+				line-height: 73px;
+				text-transform: uppercase;
+			}
+			.navMenu {
+				font-family: "Playfair Display", serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 26px;
+				line-height: 35px;
+				display: flex;
+				a {
+					text-decoration: none;
+					color: black;
+					padding: 10px;
+					border-radius: 30px;
+					transition: all 0.2s linear;
+					text-align: center;
+					display: block;
+					position: relative;
+				}
+				a:last-child {
+					margin-left: 58px;
+				}
+				a:hover {
+					background-color: #bfaf9c;
+					color: #f7f2e7;
+				}
+			}
+		}
+	}
+}
