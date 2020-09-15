@@ -22,9 +22,17 @@
     border: 1px solid #bfaf9c;
     box-sizing: border-box;
     border-radius: 5px;
+    width: 80%;
     padding: 5px;
-    color: #bfaf9c;
+    color: #917a5d;
     font-family: Montserrat, sans-serif;
+  }
+
+  p {
+      color: red;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 0.9em;
   }
 
   h1 {
@@ -50,7 +58,7 @@
     margin: auto;
     border: 0;
 
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -58,5 +66,13 @@
     text-align: center;
 
     color: #a78966;
+
+    &:hover {
+      background: rgba(128, 103, 73, 0.4);
+    }
+
+    &:active {
+      background: rgba(128, 103, 73, 0.35);
+    }
   }
 }
