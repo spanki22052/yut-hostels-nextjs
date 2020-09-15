@@ -7,7 +7,7 @@ export default function HostelListPage() {
 		<>
 			<Nav>
 				<SearchBar />
-				<CardsFilter />
+				<CardsFilter overflow='visible' />
 			</Nav>
 		</>
 	)

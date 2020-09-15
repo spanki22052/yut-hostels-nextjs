@@ -6,9 +6,9 @@ export default function Nav({ children }) {
 		<div className={classes.wrapper}>
 			<div className={classes.container}>
 				<nav className={classes.nav}>
-					<div className={classes.navLogo}>Уют</div>
+					<Link href='/'><a><div className={classes.navLogo}>Уют</div></a></Link>
 					<div className={classes.navMenu}>
-						<Link href='/'><a>список хостелов</a></Link>
+						<Link href='/hostelslist'><a>список хостелов</a></Link>
 						<Link href='/'><a>о нас</a></Link>
 					</div>
 				</nav>

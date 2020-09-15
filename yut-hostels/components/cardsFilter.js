@@ -3,7 +3,8 @@ import SearchBar from "./searchBar";
 import "../styles/cardsFilter.module.scss";
 import classes from "../styles/cardsFilter.module.scss";
 
-export default function CardsFilter() {
+export default function CardsFilter({ overflow, height }) {
+	console.log(overflow);
 	return (
 		<div>
 			<ul className={classes.cardList}>
@@ -11,7 +12,7 @@ export default function CardsFilter() {
 				<li>Новые</li>
 				<li>По ближе к метро</li>
 			</ul>
-			<div className={classes.cardItemBlock}>
+			<div className={classes.cardItemBlock} style={{ overflow: overflow, height: height }}>
 				<div className={classes.cardItem}>
 					<div className={classes.cardItemContent}>
 						<div className={classes.cardItemTitle}>Диско</div>
