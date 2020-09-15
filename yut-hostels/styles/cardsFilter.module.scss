@@ -19,9 +19,9 @@
 }
 
 .cardItemBlock {
+	// overflow: visible;
 	margin-top: 41px;
-	height: 500px;
-	overflow: auto;
+	// height: 500px;
 	.cardItem {
 		cursor: pointer;
 		margin-right: 10px;
