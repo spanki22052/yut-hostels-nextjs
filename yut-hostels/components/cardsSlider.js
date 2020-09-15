@@ -15,36 +15,26 @@ export default class SimpleSlider extends React.Component {
       autoplaySpeed: 2000,
     };
     return (
-      <>
-        <Slider {...settings}>
-          <div>
-            <Card />
-          </div>
-          <div>
-            <Card />
-          </div>
-          <div>
-            <Card />
-          </div>
-          <div>
-            <Card />
-          </div>
-          <div>
-            <Card />
-          </div>
-          <div>
-            <Card />
-          </div>
-        </Slider>
-
-        <style jsx>
-          {`
-            .slick-slide div {
-              outline: none;
-            }
-          `}
-        </style>
-      </>
+      <Slider {...settings}>
+        <div>
+          <Card />
+        </div>
+        <div>
+          <Card />
+        </div>
+        <div>
+          <Card />
+        </div>
+        <div>
+          <Card />
+        </div>
+        <div>
+          <Card />
+        </div>
+        <div>
+          <Card />
+        </div>
+      </Slider>
     );
   }
 }
