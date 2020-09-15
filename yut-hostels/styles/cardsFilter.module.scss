@@ -23,6 +23,7 @@
 	height: 500px;
 	overflow: auto;
 	.cardItem {
+		cursor: pointer;
 		margin-right: 10px;
 		height: 250px;
 		border-radius: 20px;
@@ -83,6 +84,10 @@
 			align-items: center;
 			.cardItemSvg {
 			}
+		}
+
+		&:first-child {
+			margin-top: 0;
 		}
 	}
 }
