@@ -40,18 +40,9 @@
 		cursor: pointer;
 		width: 45px;
 		height: 45px;
-		border-radius: 50%;
 		left: 88%;
 		bottom: 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		position: absolute;
 		margin-top: 40px;
-		border: 3px solid rgba(152, 138, 122, 0.4);
-		img {
-			width: 25px;
-			height: 25px;
-		}
 	}
 }
