@@ -11,7 +11,9 @@ export default class SimpleSlider extends React.Component {
 			slidesToShow: 2,
 			slidesToScroll: 1,
 			variableWidth: true,
-			centerMode: true
+			centerMode: true,
+			swipeToSlide: true,
+			touchThreshold: 10
 		};
 		return (
 			<Slider {...settings}>
