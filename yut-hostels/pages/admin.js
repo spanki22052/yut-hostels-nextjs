@@ -13,13 +13,7 @@ export default function AdminPage() {
     firebase
       .auth()
       .signInWithEmailAndPassword(login, password)
-      .catch((err) => console.log(err));
-
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (!user) {
-        setError("Wrong login or password");
-      }
-    });
+      .catch((err) => setError("Wrong login or password"));
   };
 
   firebase.auth().onAuthStateChanged(function (user) {

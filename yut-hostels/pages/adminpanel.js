@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import firebase from "../components/firebaseDB";
-import css from "../styles/adminLogin.module.scss";
+import css from "../styles/adminPanel.module.scss";
 import { useRouter } from "next/router";
 
 export default function AdminPage() {
@@ -12,9 +12,12 @@ export default function AdminPage() {
     }
   });
   return (
-    <div className={css.loginBox}>
-      <h1>Вы успешно вошли в админ панель!</h1>
-      <button onClick={() => firebase.auth().signOut()}>Выйти</button>
+    <div className={css.adminPanelBox}>
+      <h1>Админ панель</h1>
+      <div className={css.buttonsBlock}>
+          <button>Добавить хостел</button>
+          <button>Добавить параметры</button>
+      </div>
     </div>
   );
 }
