@@ -1,26 +1,13 @@
-import firebase from "../components/firebaseDB";
-import AdminPanelLogin from "../components/adminPanelLogin";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import css from "../styles/adminLogin.module.scss";
 
 export default function AdminPage() {
-	const [hostelsList, setList] = useState([]);
-	useEffect(() => {
-		firebase
-			.collection("hostels")
-			.doc("hostelsList")
-			.get()
-			.then((el) => setList(el.data().hostels));
-	}, []);
-	return (
-		<div>
-			<h1 style={{ fontFamily: "Montserrat, sans-serif" }}>Список хостелов!</h1>
-			<ul>
-				{hostelsList !== undefined &&
-					hostelsList.map((el, index) => {
-						return <li key={index}>{el}</li>;
-					})}
-			</ul>
-			<AdminPanelLogin />
-		</div>
-	);
+  return (
+    <div className={css.loginBox}>
+      <h1>Вход в админ панель</h1>
+      <input placeholder="Логин" />
+      <input placeholder="Пароль" />
+      <button>ВОЙТИ</button>
+    </div>
+  );
 }
