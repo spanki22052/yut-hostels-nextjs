@@ -1,14 +1,15 @@
 .container {
 	overflow: hidden;
 	padding-top: 34px;
-	max-width: 1250px;
+	max-width: 1400px;
 	margin: 0 auto;
+	padding: 0 50px;
 	.nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 0.5px solid #bfaf9c;
-		margin-bottom: 70px;
+		margin: 30px 0 70px 0;
 		.navLogo {
 			font-family: "Playfair Display", serif;
 			font-style: normal;
