@@ -6,6 +6,10 @@
 	font-size: 26px;
 }
 
+*:focus {
+	outline: none;
+}
+
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
