@@ -6,14 +6,16 @@ import { useRouter } from "next/router";
 export default function AdminPage() {
   const [currentAdd, setAdd] = useState("");
   const [hostelsList, setHostels] = useState([]);
+  const [hostelsObject, setHostelsObject] = useState({});
   const [hostelTitle, setHostelTitle] = useState("");
   const [hostelParametersObject, setHostelObject] = useState({
     title: "",
     description: "",
-    peoplePercentage: 0,
+    peoplePercentage: "",
     phoneNumber: "",
     metro: "",
     photos: "",
+    pricelist: "",
   });
 
   const inputStringsHolder = [
@@ -29,6 +31,8 @@ export default function AdminPage() {
     "metro",
     "Название фото (через пробел)",
     "photos",
+    "Цена от/до (отделить пробелами)",
+    "pricelist",
   ];
 
   const Router = useRouter();
@@ -45,7 +49,19 @@ export default function AdminPage() {
       .collection("hostels")
       .doc("hostelsList")
       .get()
-      .then((el) => setHostels(el.data().hostels));
+      .then((el) => {
+        setHostels(el.data().hostels);
+      });
+
+    firebase
+      .firestore()
+      .collection("hostels")
+      .doc("hostelsObject")
+      .get()
+      .then((el) => {
+        console.log(el.data().hostels);
+        setHostelsObject(el.data().hostels);
+      });
   }, []);
 
   const addNewElementToList = (element) => {
@@ -58,6 +74,40 @@ export default function AdminPage() {
         .doc("hostelsList")
         .set({ hostels: [...hostelsList, element] });
     setHostelTitle("");
+  };
+
+  const addNewParameters = (element) => {
+    let c = { ...element };
+    c["photos"] = c.photos.split(" ");
+    c["pricelist"] = c.pricelist.split(" ");
+    c["metro"] = c.metro.split(" ");
+
+    let newObject = { ...hostelsObject };
+    newObject[c.title] = c;
+    console.log(newObject)
+
+    inputStringsHolder
+      .filter((el, index) => {
+        return index % 2 !== 0;
+      })
+      .map((el) => {
+        return el.length > 0 && true;
+      })
+      .includes(false) === false &&
+      firebase
+        .firestore()
+        .collection("hostels")
+        .doc("hostelsObject")
+        .set({ hostels: newObject });
+    setHostelObject({
+      title: "",
+      description: "",
+      peoplePercentage: "",
+      phoneNumber: "",
+      metro: "",
+      photos: "",
+      pricelist: "",
+    });
   };
 
   return (
@@ -119,7 +169,7 @@ export default function AdminPage() {
                   />
                 );
               })}
-            <button onClick={() => console.log(hostelParametersObject)}>
+            <button onClick={() => addNewParameters(hostelParametersObject)}>
               Добавить
             </button>
           </div>
