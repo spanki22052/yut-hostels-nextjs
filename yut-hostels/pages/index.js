@@ -10,7 +10,7 @@ export default function MainPage() {
 				<div className="title">Привет, дорогой гость!</div>
 				<div className="suptitle">
 					Ищешь комфортный, приятный, хостел, расположенный около метро?
-        </div>
+        		</div>
 				<CardsSlider />
 				<SearchBar />
 				<CardsFilter overflow='auto' height='500px' />
