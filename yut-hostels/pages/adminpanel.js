@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import firebase from "../components/firebaseDB";
 import css from "../styles/adminPanel.module.scss";
 import { useRouter } from "next/router";
 
 export default function AdminPage() {
   const [currentAdd, setAdd] = useState("");
+  const [hostelsList, setHostels] = useState([]);
+  const [hostelTitle, setHostelTitle] = useState("");
   const Router = useRouter();
 
   firebase.auth().onAuthStateChanged(function (user) {
@@ -12,6 +14,28 @@ export default function AdminPage() {
       Router.push("/");
     }
   });
+
+  useEffect(() => {
+    firebase
+      .firestore()
+      .collection("hostels")
+      .doc("hostelsList")
+      .get()
+      .then((el) => setHostels(el.data().hostels));
+  }, []);
+
+  const addNewElementToList = (element) => {
+    element.length > 0 &&
+      element.length < 15 &&
+      hostelsList.includes(element) === false &&
+      firebase
+        .firestore()
+        .collection("hostels")
+        .doc("hostelsList")
+        .set({ hostels: [...hostelsList, element] });
+    setHostelTitle("");
+  };
+
   return (
     <div className={css.adminPanelBox}>
       <h1>Админ панель</h1>
@@ -23,8 +47,14 @@ export default function AdminPage() {
       <div className={css.inputsBlock}>
         {currentAdd != "parameters" ? (
           <div className={css.hostelBlock}>
-            <input placeholder="Название хостела" />
-            <button>Применить</button>
+            <input
+              onChange={(e) => setHostelTitle(e.target.value)}
+              value={hostelTitle}
+              placeholder="Название хостела"
+            />
+            <button onClick={() => addNewElementToList(hostelTitle)}>
+              Применить
+            </button>
           </div>
         ) : (
           <div className={css.hostelBlock}>
