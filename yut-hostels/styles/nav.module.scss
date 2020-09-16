@@ -12,10 +12,6 @@
 		margin: 30px 0 70px 0;
 		position: relative;
 
-		.active {
-			display: none;
-		}
-
 		.navBurger {
 			display: none;
 		}
@@ -97,6 +93,9 @@
 				a:last-child {
 					margin-left: 0px;
 				}
+			}
+			.active {
+				display: none;
 			}
 		}
 	}
