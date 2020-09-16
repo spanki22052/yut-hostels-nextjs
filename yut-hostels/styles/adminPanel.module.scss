@@ -45,7 +45,6 @@
     }
 
     button {
-      background: rgba(152, 138, 122, 0.3);
       border-radius: 2222px;
       width: 200px;
       height: 40px;
@@ -57,6 +56,7 @@
       text-align: center;
 
       color: #806749;
+      background: rgba(152, 138, 122, 0.3);
 
       &:hover {
         background-color: rgb(126, 102, 73, 0.3);
@@ -78,25 +78,40 @@
     margin-top: 20px;
     margin-bottom: 50px;
 
+    .choosedButton {
+      color: #f7f2e7;
+      background: rgb(128, 103, 73);
+
+      &:hover {
+        background: rgb(128, 103, 73, 0.9);
+      }
+
+      &:active {
+        background: rgb(128, 103, 73, 0.95);
+      }
+    }
+
+    .notButton {
+      color: #806749;
+      background: rgba(152, 138, 122, 0.3);
+
+      &:hover {
+        background-color: rgb(126, 102, 73, 0.3);
+      }
+
+      &:active {
+        background-color: rgb(126, 102, 73, 0.25);
+      }
+    }
     button {
       height: 40px;
       padding: 0px 20px;
       margin-top: 10px;
 
-      background: rgba(128, 103, 73, 0.3);
       border-radius: 1000px;
-      color: #79664f;
       font-family: Montserrat;
       font-size: 0.8em;
       border: 0;
-
-      &:hover {
-        background: rgba(128, 103, 73, 0.35);
-      }
-
-      &:active {
-        background: rgba(128, 103, 73, 0.4);
-      }
     }
   }
 }

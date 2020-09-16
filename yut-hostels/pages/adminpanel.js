@@ -40,8 +40,22 @@ export default function AdminPage() {
     <div className={css.adminPanelBox}>
       <h1>Админ панель</h1>
       <div className={css.buttonsBlock}>
-        <button onClick={() => setAdd("hostel")}>Добавить хостел</button>
-        <button onClick={() => setAdd("parameters")}>Добавить параметры</button>
+        <button
+          className={
+            currentAdd === "hostel" ? css.choosedButton : css.notButton
+          }
+          onClick={() => setAdd("hostel")}
+        >
+          Добавить хостел
+        </button>
+        <button
+          className={
+            currentAdd === "parameters" ? css.choosedButton : css.notButton
+          }
+          onClick={() => setAdd("parameters")}
+        >
+          Добавить параметры
+        </button>
       </div>
 
       <div className={css.inputsBlock}>
