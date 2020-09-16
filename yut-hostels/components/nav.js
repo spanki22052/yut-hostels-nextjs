@@ -4,12 +4,6 @@ import { useState } from "react";
 
 export default function Nav({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleClick = () => {
-    isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true);
-    console.log(isMenuOpen);
-  };
-
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
@@ -19,7 +13,12 @@ export default function Nav({ children }) {
               <div className={classes.navLogo}>Уют</div>
             </a>
           </Link>
-          <div className={classes.navBurger} onClick={handleClick}>
+          <div
+            className={classes.navBurger}
+            onClick={() =>
+              isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true)
+            }
+          >
             <span></span>
           </div>
           <div className={classes.navMenu}>
