@@ -22,6 +22,52 @@
     color: #504436;
   }
 
+  .hostelBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+    input {
+      background: #f7f2e7;
+      border: 1px solid #a78966;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 80%;
+
+      font-family: Montserrat;
+      font-size: 18px;
+      padding: 10px;
+
+      color: #7c6b56;
+    }
+
+    button {
+      background: rgba(152, 138, 122, 0.3);
+      border-radius: 2222px;
+      width: 200px;
+      height: 40px;
+      border: 0;
+      margin-top: 20px;
+
+      font-family: Montserrat;
+      font-size: 18px;
+      text-align: center;
+
+      color: #806749;
+
+      &:hover {
+        background-color: rgb(126, 102, 73, 0.3);
+      }
+
+      &:active {
+        background-color: rgb(126, 102, 73, 0.25);
+      }
+    }
+  }
+
   .buttonsBlock {
     width: 100%;
     height: 40px;
@@ -30,6 +76,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 50px;
 
     button {
       height: 40px;
@@ -42,6 +89,14 @@
       font-family: Montserrat;
       font-size: 0.8em;
       border: 0;
+
+      &:hover {
+        background: rgba(128, 103, 73, 0.35);
+      }
+
+      &:active {
+        background: rgba(128, 103, 73, 0.4);
+      }
     }
   }
 }
