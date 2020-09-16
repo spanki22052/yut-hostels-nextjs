@@ -60,6 +60,12 @@
 			.navBurger::after {
 				bottom: 0;
 			}
+			.navburger .active::before {
+				transform: rotate(45deg);
+			}
+			.navburger .active::after {
+				transform: rotate(-45deg);
+			}
 		}
 		a {
 			text-decoration: none;
