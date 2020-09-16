@@ -15,14 +15,24 @@ export default function Nav({ children }) {
             </a>
           </Link>
           <div
-            className={classes.navBurger + " " + classes.active}
+            className={
+              !isMenuOpen
+                ? classes.navBurger
+                : classes.navBurger + " " + classes.active
+            }
             onClick={() =>
               isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true)
             }
           >
             <span></span>
           </div>
-          <div className={classes.navMenu + " " + classes.active}>
+          <div
+            className={
+              isMenuOpen
+                ? classes.navMenu
+                : classes.active
+            }
+          >
             <Link href="/hostelslist">
               <a>список хостелов</a>
             </Link>
