@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Nav({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
@@ -14,14 +15,14 @@ export default function Nav({ children }) {
             </a>
           </Link>
           <div
-            className={classes.navBurger}
+            className={classes.navBurger + " " + classes.active}
             onClick={() =>
               isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true)
             }
           >
             <span></span>
           </div>
-          <div className={classes.navMenu}>
+          <div className={classes.navMenu + " " + classes.active}>
             <Link href="/hostelslist">
               <a>список хостелов</a>
             </Link>
