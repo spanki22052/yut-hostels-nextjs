@@ -1,4 +1,4 @@
-import HostelCard from "./hostelCard";
+import Link from "next/link";
 import "../styles/cardsFilter.module.scss";
 import classes from "../styles/cardsFilter.module.scss";
 import React, { useEffect, useState } from "react";
@@ -32,10 +32,21 @@ export default function CardsFilter({ overflow, height }) {
 				<li>По ближе к метро</li>
 			</ul>
 			<div className={classes.cardItemBlock} style={{ overflow: overflow, height: height }}>
+
 				{infoList.length > 0 &&
-					infoList.map((element, index) => {
+					infoList.map((el, index) => {
 						return (
-							<HostelCard key={index} infoObject={infoObject[element]} />
+							<div key={index} className={classes.cardItem}>
+								<img className={classes.cardItemSvg} src="/svg/sleep.svg" />
+								<div className={classes.cardItemContent}>
+									<div className={classes.cardItemTitle}>{infoObject[el].title}</div>
+									<div className={classes.cardItemSuptitle}>{infoObject[el].description}</div>
+									<div className={classes.cardItemInfo}>
+										<div className={classes.cardItemLocation}>м. {infoObject[el].metro[0]}</div>
+										<div className={classes.cardItemPrice}>от {infoObject[el].pricelist[0]} р</div>
+									</div>
+								</div>
+							</div>
 						);
 					})}
 			</div>
