@@ -7,6 +7,7 @@ export default function AdminPage() {
   const [currentAdd, setAdd] = useState("");
   const [hostelsList, setHostels] = useState([]);
   const [hostelsObject, setHostelsObject] = useState({});
+  const [hostelsBadge, setHostelsBadge] = useState({});
   const [hostelTitle, setHostelTitle] = useState("");
   const [hostelParametersObject, setHostelObject] = useState({
     title: "",
@@ -62,6 +63,15 @@ export default function AdminPage() {
     firebase
       .firestore()
       .collection("hostels")
+      .doc("hostelBadges")
+      .get()
+      .then((el) => {
+        setHostelsBadge(el.data().hostels);
+      });
+
+    firebase
+      .firestore()
+      .collection("hostels")
       .doc("hostelsObject")
       .get()
       .then((el) => {
@@ -90,6 +100,23 @@ export default function AdminPage() {
     let newObject = { ...hostelsObject };
     newObject[c.title] = c;
     console.log(newObject);
+
+    let newBadgeObject = { ...hostelsBadge };
+    newBadgeObject[element.badge] = element.title;
+
+    inputStringsHolder
+      .filter((el, index) => {
+        return index % 2 !== 0;
+      })
+      .map((el) => {
+        return el.length > 0 && true;
+      })
+      .includes(false) === false &&
+      firebase
+        .firestore()
+        .collection("hostels")
+        .doc("hostelBadges")
+        .set({ hostels: newBadgeObject });
 
     inputStringsHolder
       .filter((el, index) => {
