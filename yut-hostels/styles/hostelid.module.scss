@@ -8,7 +8,6 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			padding: 20px 30px;
 			border-radius: 10px;
 			.reservation {
 				margin-bottom: 35px;
@@ -73,16 +72,43 @@
 				line-height: 24px;
 				color: rgba(0, 0, 0, 0.3);
 			}
+			@media (max-width: 1100px) {
+				.title {
+					font-size: 40px;
+				}
+				.suptitle {
+					font-size: 20px;
+				}
+			}
+			@media (max-width: 890px) {
+				.title {
+					font-size: 30px;
+				}
+				.suptitle {
+					font-size: 16px;
+				}
+				.freePlaces {
+					font-size: 15px;
+				}
+				.procent {
+					font-size: 15px;
+				}
+			}
 		}
 	}
 	.hostelSlider {
+		overflow: visible;
 		margin-top: 35px;
 		background-color: #fff;
 		border-radius: 25px;
-		padding-top: 10px;
-		padding-left: 15px;
+		padding: 10px 15px 0 15px;
 		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 		.sliderItem {
+		}
+		@media (max-width: 890px) {
+			.sliderItem img {
+				height: 150px;
+			}
 		}
 	}
 	.location {
@@ -144,12 +170,48 @@
 			}
 			.phoneInfo {
 				display: flex;
+				align-items: center;
+				justify-content: center;
 				img {
 					margin-right: 20px;
 				}
 				div {
 					font-weight: 300;
 					font-size: 35px;
+				}
+			}
+		}
+		@media (max-width: 1100px) {
+			.metro {
+				padding: 10px 50px 30px;
+			}
+			.phone {
+				padding: 0 50px;
+			}
+		}
+		@media (max-width: 890px) {
+			.metro {
+				padding: 10px 50px 30px;
+				.metroIcon {
+					margin-top: 20px;
+					height: 50px;
+				}
+				.hostelLocation {
+					font-size: 20px;
+				}
+			}
+			.phone {
+				padding: 0 50px;
+				div {
+					font-size: 35px;
+				}
+				.phoneInfo {
+					img {
+						height: 30px;
+					}
+					div {
+						font-size: 25px;
+					}
 				}
 			}
 		}

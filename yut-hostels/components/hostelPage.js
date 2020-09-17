@@ -13,6 +13,7 @@ export default function HostelPage() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
+		// variableWidth: true
 	};
 
 	return (
@@ -38,13 +39,13 @@ export default function HostelPage() {
 					<div className={classes.sliderItem}>
 						<img src="/svg/hostels.png"></img>
 					</div>
-					<div>
+					<div className={classes.sliderItem}>
 						<img src="/svg/hostels.png"></img>
 					</div>
-					<div>
+					<div className={classes.sliderItem}>
 						<img src="/svg/hostels.png"></img>
 					</div>
-					<div>
+					<div className={classes.sliderItem}>
 						<img src="/svg/hostels.png"></img>
 					</div>
 				</Slider>
