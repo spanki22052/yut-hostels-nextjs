@@ -58,8 +58,8 @@ export default function MainPage() {
 
         button:hover {
           background: rgba(152, 138, 122, 0.4);
-		}
-		
+        }
+
         button:active {
           background: rgba(152, 138, 122, 0.45);
         }

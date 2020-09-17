@@ -14,9 +14,6 @@ export default function CardsFilter({
   const [infoList, setList] = useState([]);
   const [infoBadge, setBadge] = useState({});
 
-  const setStyle =
-    showCategory === false ? { display: "none" } : { zIndex: "0" };
-
   const showIt = (el, index) => {
     return (
       <Link key={index} href={`/hostels/${infoObject[el].badge}`}>
