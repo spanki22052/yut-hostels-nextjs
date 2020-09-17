@@ -42,7 +42,7 @@ export default function CardsFilter({ overflow, height }) {
 									<div className={classes.cardItemTitle}>{infoObject[el].title}</div>
 									<div className={classes.cardItemSuptitle}>{infoObject[el].description}</div>
 									<div className={classes.cardItemInfo}>
-										<div className={classes.cardItemLocation}>м. {infoObject[el].metro[0]}</div>
+										<div className={classes.cardItemLocation}>м. {infoObject[el].metro}</div>
 										<div className={classes.cardItemPrice}>от {infoObject[el].pricelist[0]} р</div>
 									</div>
 								</div>
