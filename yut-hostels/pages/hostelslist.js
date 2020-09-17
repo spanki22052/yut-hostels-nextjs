@@ -3,12 +3,11 @@ import SearchBar from "../components/searchBar";
 import CardsFilter from "../components/cardsFilter";
 
 export default function HostelListPage() {
-	return (
-		<>
-			<Nav>
-				<SearchBar />
-				<CardsFilter overflow='visible' />
-			</Nav>
-		</>
-	)
+  return (
+    <>
+      <Nav>
+        <SearchBar showSearchbar={true} showCategories={false} />
+      </Nav>
+    </>
+  );
 }
