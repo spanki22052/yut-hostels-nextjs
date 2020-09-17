@@ -1,21 +1,21 @@
 import Nav from "../components/nav";
 import SearchBar from "../components/searchBar";
 import CardsFilter from "../components/cardsFilter";
-import SimpleSlider from "../components/cardsSlider";
+import CardsSlider from "../components/cardsSlider";
 
 export default function MainPage() {
-  return (
-    <>
-      <Nav>
-        <div className="title">Привет, дорогой гость!</div>
-        <div className="suptitle">
-          Ищешь комфортный, приятный, хостел, расположенный около метро?
-        </div>
-        <SimpleSlider />
-        <SearchBar />
-        <CardsFilter overflow="auto" height="500px" />
-      </Nav>
-      <style jsx>{`
+	return (
+		<>
+			<Nav>
+				<div className="title">Привет, дорогой гость!</div>
+				<div className="suptitle">
+					Ищешь комфортный, приятный, хостел, расположенный около метро?
+        		</div>
+				<CardsSlider />
+				<SearchBar />
+				<CardsFilter overflow='auto' height='500px' />
+			</Nav>
+			<style jsx>{`
         .title {
           font-family: "Montserrat", sans-serif;
           font-style: normal;
