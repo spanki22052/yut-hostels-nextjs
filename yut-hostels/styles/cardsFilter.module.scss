@@ -26,6 +26,7 @@
 .cardItemBlock {
 	margin-top: 41px;
 	.cardItem {
+		box-shadow: 0px 4px 12px rgba(152, 138, 122, 0.2);
 		height: 100%;
 		display: flex;
 		cursor: pointer;
@@ -41,6 +42,7 @@
 			padding: 0 40px;
 		}
 		.cardItemContent {
+			margin-top: 10px;
 			display: flex;
 			flex-direction: column;
 			margin-left: 50px;
