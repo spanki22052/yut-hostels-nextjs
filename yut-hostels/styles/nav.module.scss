@@ -81,6 +81,7 @@
 				height: 100%;
 				background-color: #988a7a;
 				z-index: 2;
+				transition: all 0.3s ease;
 				a {
 					display: block;
 					margin: 0px 0px 20px 0px;
@@ -90,7 +91,8 @@
 				}
 			}
 			.active {
-				display: none;
+				// display: none;
+				top: -100%;
 			}
 		}
 	}
@@ -125,7 +127,6 @@
 	.container {
 		padding: 0 15px;
 		.nav {
-			margin-top: 10px;
 			margin-bottom: 10px;
 			.navLogo {
 				font-size: 35px;

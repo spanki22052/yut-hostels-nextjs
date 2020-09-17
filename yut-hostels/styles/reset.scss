@@ -76,7 +76,7 @@ body {
 	background: #f7f2e7;
 
 	::-webkit-scrollbar {
-		width: 24px; /* ширина для вертикального скролла */
+		width: 10px; /* ширина для вертикального скролла */
 		height: 1px; /* высота для горизонтального скролла */
 		background: #f7f2e7;
 	}
@@ -85,6 +85,16 @@ body {
 	::-webkit-scrollbar-thumb {
 		background: #988a7a;
 		border-radius: 9em;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		::-webkit-scrollbar {
+			width: 5px; /* ширина для вертикального скролла */
+			height: 1px; /* высота для горизонтального скролла */
+			background: #f7f2e7;
+		}
 	}
 }
 

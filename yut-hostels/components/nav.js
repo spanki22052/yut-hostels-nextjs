@@ -23,7 +23,7 @@ export default function Nav({ children }) {
 							}}
 							width={25}
 							height={20}
-							strokeWidth={1}
+							strokeWidth={2}
 							rotate={0}
 							color="black"
 							borderRadius={0}

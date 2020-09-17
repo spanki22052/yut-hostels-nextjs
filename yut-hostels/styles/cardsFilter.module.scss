@@ -55,6 +55,7 @@
 .cardItemBlock {
 	margin-top: 41px;
 	.cardItem {
+		width: 100%;
 		box-shadow: 0px 4px 12px rgba(152, 138, 122, 0.2);
 		display: flex;
 		cursor: pointer;
@@ -100,7 +101,7 @@
 				justify-content: space-between;
 				align-items: center;
 				margin-right: 34px;
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 				.cardItemLocation {
 					font-family: "Montserrat", sans-serif;
 					font-style: normal;
@@ -149,6 +150,99 @@
 					}
 					.cardItemPrice {
 						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.cardItemBlock {
+		.cardItem {
+			height: 240px;
+			.cardItemSvg {
+				width: 200px;
+			}
+			.cardItemContent {
+				.cardItemTitles {
+					.cardItemTitle {
+						font-size: 22px;
+					}
+					.cardItemSuptitle {
+						font-size: 18px;
+					}
+				}
+				.cardItemInfo {
+					.cardItemLocation {
+						font-size: 18px;
+					}
+					.cardItemPrice {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.cardItemBlock {
+		.cardItem {
+			height: 260px;
+			.cardItemSvg {
+				display: none;
+			}
+			.cardItemContent {
+				margin-left: 30px;
+				.cardItemTitles {
+					.cardItemTitle {
+						font-size: 25px;
+					}
+					.cardItemSuptitle {
+						font-size: 21px;
+					}
+				}
+				.cardItemInfo {
+					.cardItemLocation {
+						font-size: 18px;
+					}
+					.cardItemPrice {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.cardItemBlock {
+		margin-top: 15px;
+		.cardItem {
+			height: 200px;
+			.cardItemContent {
+				margin-left: 30px;
+				.cardItemTitles {
+					.cardItemTitle {
+						font-size: 16px;
+						line-height: 25px;
+					}
+					.cardItemSuptitle {
+						padding-right: 15px;
+						font-size: 12px;
+						line-height: 20px;
+						text-align: justify;
+					}
+				}
+				.cardItemInfo {
+					.cardItemLocation {
+						line-height: 25px;
+						font-size: 12px;
+					}
+					.cardItemPrice {
+						line-height: 25px;
+						font-size: 12px;
 					}
 				}
 			}
