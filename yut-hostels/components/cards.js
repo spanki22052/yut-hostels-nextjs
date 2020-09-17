@@ -1,6 +1,7 @@
 import classes from "../styles/cards.module.scss";
+import Link from "next/link";
 
-export default function Card({ infoObject }) {
+export default function Card({ infoObject, goto }) {
   return (
     <>
       {Object.keys(infoObject).length > 0 && (
@@ -14,7 +15,9 @@ export default function Card({ infoObject }) {
             ></div>
           </div>
           <div>{infoObject.peoplePercentage}%</div>
-          <img className={classes.icon} src="/svg/play.svg" />
+          <Link href={goto}>
+            <img className={classes.icon} src="/svg/play.svg" />
+          </Link>
         </div>
       )}
     </>
