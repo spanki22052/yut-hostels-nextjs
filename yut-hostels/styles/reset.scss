@@ -95,9 +95,10 @@ body {
 			height: 1px; /* высота для горизонтального скролла */
 			background: #f7f2e7;
 		}
+		overflow: visible;
 	}
 }
 
-// .lock {
-// 	overflow: hidden;
-// }
+.lock {
+	overflow: hidden;
+}

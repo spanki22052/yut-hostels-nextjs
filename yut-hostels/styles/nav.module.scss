@@ -107,7 +107,9 @@
 			margin-top: 25px;
 			margin-bottom: 40px;
 			.navLogo {
-				font-size: 45px;
+				span {
+					font-size: 45px;
+				}
 			}
 		}
 	}
@@ -119,7 +121,9 @@
 			margin-top: 15px;
 			margin-bottom: 30px;
 			.navLogo {
-				font-size: 40px;
+				span {
+					font-size: 40px;
+				}
 			}
 		}
 	}
@@ -131,7 +135,9 @@
 		.nav {
 			margin-bottom: 10px;
 			.navLogo {
-				font-size: 35px;
+				span {
+					font-size: 35px;
+				}
 			}
 		}
 	}
