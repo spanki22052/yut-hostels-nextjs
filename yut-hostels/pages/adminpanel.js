@@ -16,6 +16,8 @@ export default function AdminPage() {
     metro: "",
     photos: "",
     pricelist: "",
+    badge: "",
+    hex: "",
   });
 
   const inputStringsHolder = [
@@ -27,12 +29,16 @@ export default function AdminPage() {
     "peoplePercentage",
     "Телефон",
     "phoneNumber",
-    "Метро + HEX",
+    "HEX метро",
+    "hex",
+    "Метро",
     "metro",
     "Название фото (через пробел)",
     "photos",
     "Цена от/до (отделить пробелами)",
     "pricelist",
+    "Расшифровка (eng)",
+    "badge",
   ];
 
   const Router = useRouter();
@@ -80,11 +86,10 @@ export default function AdminPage() {
     let c = { ...element };
     c["photos"] = c.photos.split(" ");
     c["pricelist"] = c.pricelist.split(" ");
-    c["metro"] = c.metro.split(" ");
 
     let newObject = { ...hostelsObject };
     newObject[c.title] = c;
-    console.log(newObject)
+    console.log(newObject);
 
     inputStringsHolder
       .filter((el, index) => {
@@ -107,6 +112,8 @@ export default function AdminPage() {
       metro: "",
       photos: "",
       pricelist: "",
+      hex: "",
+      badge: "",
     });
   };
 
