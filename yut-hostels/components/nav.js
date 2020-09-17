@@ -58,7 +58,7 @@ export default function Nav({ children }) {
                 </span>
 							</a>
 						</Link>
-						<Link href="/">
+						<Link href="/aboutus">
 							<a>
 								<span
 									onClick={() => {
