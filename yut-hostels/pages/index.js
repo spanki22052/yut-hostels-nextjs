@@ -24,7 +24,7 @@ export default function MainPage() {
           line-height: 41px;
           margin-bottom: 5px;
           color: #535048;
-        }
+		  }
 
         .suptitle {
           font-family: "Montserrat", sans-serif;
@@ -34,8 +34,36 @@ export default function MainPage() {
           line-height: 32px;
           color: #988a7a;
           margin-bottom: 70px;
-        }
+		  }
+		  
+		  @media (max-width: 770px){
+			  .title{
+				  font-size:28px;
+			  }
+			  .suptitle{
+				  font-size:20px;
+				  margin-bottom:40px;
+			  }
+		  }
+		  @media (max-width: 560px){
+			.title{
+				font-size:23px;
+			}
+			.suptitle{
+				font-size:19px;
+				margin-bottom: 20px;		
+			}
+		  }
+		  @media (max-width: 400px){
+			.title{
+				font-size:20px;
+			}
+			.suptitle{
+				font-size:16px;
+				margin-bottom: 15px;		
+			}
+		  }	
       `}</style>
-    </>
-  );
+		</>
+	);
 }

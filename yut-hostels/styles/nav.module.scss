@@ -44,11 +44,6 @@
 			position: relative;
 			z-index: 3;
 		}
-		@media (max-width: 720px) {
-			.navLogo {
-				font-size: 45px;
-			}
-		}
 		.navMenu {
 			position: relative;
 			z-index: 3;
@@ -96,6 +91,44 @@
 			}
 			.active {
 				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.container {
+		padding: 0 30px;
+		.nav {
+			margin-top: 25px;
+			margin-bottom: 40px;
+			.navLogo {
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.container {
+		.nav {
+			margin-top: 15px;
+			margin-bottom: 30px;
+			.navLogo {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		padding: 0 15px;
+		.nav {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			.navLogo {
+				font-size: 35px;
 			}
 		}
 	}

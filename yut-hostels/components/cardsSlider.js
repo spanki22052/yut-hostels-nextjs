@@ -8,16 +8,26 @@ export default function SimpleSlider() {
 	const [infoObject, setObject] = useState({});
 	const [infoList, setList] = useState({});
 
-	var settings = {
-		dots: false,
+	// var settings = {
+	// 	dots: false,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	variableWidth: false,
+	// 	centerMode: true,
+	// 	swipeToSlide: true,
+	// 	touchThreshold: 10,
+	// };
+	const settings = {
+		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		variableWidth: true,
-		centerMode: true,
-		swipeToSlide: true,
-		touchThreshold: 10,
+		arrows: false
+
 	};
 
 	useEffect(() => {

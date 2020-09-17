@@ -29,7 +29,7 @@ export default function CardsFilter({ overflow, height }) {
 			<ul className={classes.cardList}>
 				<li className={classes.activeCard}>Популярные</li>
 				<li>Новые</li>
-				<li>По ближе к метро</li>
+				<li>У метро</li>
 			</ul>
 			<div className={classes.cardItemBlock} style={{ overflow: overflow, height: height }}>
 
@@ -39,8 +39,10 @@ export default function CardsFilter({ overflow, height }) {
 							<div key={index} className={classes.cardItem}>
 								<img className={classes.cardItemSvg} src="/svg/sleep.svg" />
 								<div className={classes.cardItemContent}>
-									<div className={classes.cardItemTitle}>{infoObject[el].title}</div>
-									<div className={classes.cardItemSuptitle}>{infoObject[el].description}</div>
+									<div className={classes.cardItemTitles}>
+										<div className={classes.cardItemTitle}>{infoObject[el].title}</div>
+										<div className={classes.cardItemSuptitle}>{infoObject[el].description}</div>
+									</div>
 									<div className={classes.cardItemInfo}>
 										<div className={classes.cardItemLocation}>м. {infoObject[el].metro}</div>
 										<div className={classes.cardItemPrice}>от {infoObject[el].pricelist[0]} р</div>
