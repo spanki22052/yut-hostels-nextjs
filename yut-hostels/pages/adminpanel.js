@@ -137,6 +137,9 @@ export default function AdminPage() {
         .collection("hostels")
         .doc("hostelsObject")
         .set({ hostels: newObject });
+
+    setHostelsObject({ ...newObject });
+
     setHostelObject({
       title: "",
       description: "",
