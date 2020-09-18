@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<meta name="google-site-verification" content="TRP0wsyEX7Ax48uNjE8ErWw0AU6oW_gFFkyqmnfIVAc" />
 					<link href="dist/hamburgers.css" rel="stylesheet" />
 					<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet"></link>
 					<link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />

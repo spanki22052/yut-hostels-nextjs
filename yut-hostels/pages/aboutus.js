@@ -1,10 +1,16 @@
 import AboutUsPage from '../components/aboutUsPage.js';
 import Nav from '../components/nav';
+import Head from 'next/head';
 
 export default function AboutUs() {
 	return (
-		<Nav>
-			<AboutUsPage />
-		</Nav>
+		<>
+			<Head>
+				<title>О сети хостелов Уют</title>
+			</Head>
+			<Nav>
+				<AboutUsPage />
+			</Nav>
+		</>
 	)
 }

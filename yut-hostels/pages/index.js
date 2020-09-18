@@ -2,33 +2,37 @@ import Nav from "../components/nav";
 import SearchBar from "../components/searchBar";
 import CardsSlider from "../components/cardsSlider";
 import Link from "next/link";
+import Head from 'next/head';
 
 export default function MainPage() {
-  return (
-    <>
-      <title>Сеть хостелов Уют</title>
-      <Nav>
-        <div className="title">Привет, дорогой гость!</div>
-        <div className="suptitle">
-          Ищешь комфортный, приятный, хостел, расположенный около метро?
+	return (
+		<>
+			<Head>
+				<meta name="description" content={`Сеть хостелов "Уют" предоставляет одни из лучших, бюджетных и уютных хостелов в городе! Мы ждем вас, друзья!`} />
+				<title>Сеть хостелов Уют</title>
+			</Head>
+			<Nav>
+				<div className="title">Привет, дорогой гость!</div>
+				<div className="suptitle">
+					Ищешь комфортный, приятный, хостел, расположенный около метро?
         </div>
-        <CardsSlider />
-        <br />
-        <br />
-        <div className={"our-hostels"}>
-          <h1>Наши хостелы</h1>
-          <div className="line"></div>
-          <p>Нажмите на карточку для перехода</p>
-        </div>
-        <SearchBar showSearchbar={false} showCategories={true} />
-        <br />
-        <Link href="/hostelslist">
-          <button>Показать еще</button>
-        </Link>
-        <br />
-      </Nav>
+				<CardsSlider />
+				<br />
+				<br />
+				<div className={"our-hostels"}>
+					<h1>Наши хостелы</h1>
+					<div className="line"></div>
+					<p>Нажмите на карточку для перехода</p>
+				</div>
+				<SearchBar showSearchbar={false} showCategories={true} />
+				<br />
+				<Link href="/hostelslist">
+					<button>Показать еще</button>
+				</Link>
+				<br />
+			</Nav>
 
-      <style jsx>{`
+			<style jsx>{`
         .title {
           font-family: "Montserrat", sans-serif;
           font-style: normal;
@@ -135,6 +139,6 @@ export default function MainPage() {
           }
         }
       `}</style>
-    </>
-  );
+		</>
+	);
 }
