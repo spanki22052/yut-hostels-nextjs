@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function MainPage() {
   return (
     <>
+      <title>Сеть хостелов Уют</title>
       <Nav>
         <div className="title">Привет, дорогой гость!</div>
         <div className="suptitle">
