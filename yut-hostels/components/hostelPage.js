@@ -55,10 +55,12 @@ export default function HostelPage({ infoObject }) {
 									return (
 										<div key={index} className={classes.sliderItem}>
 											<Zoom
-												overlayBgColorEnd='rgba(255, 255, 255, 0.50)'
-												zoomMargin={50}
+												overlayBgColorEnd='rgba(0, 0, 0, 0.50)'
+												zoomMargin={80}
+												onZoomChange={5}
+												width={100}
 											>
-												<img src={`/${el}.jpg`}></img>
+												<img width="550px" style={{ objectFit: "cover"}} height="220px" src={`/${el}.jpg`}></img>
 											</Zoom>
 										</div>
 									);
