@@ -14,9 +14,14 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="FTe50ALqpfNJHROZTMKhdNctXVlC0K7y0XmTkfZh-SE"
           />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta
             name="description"
-            content="Комфортное и доступное жилье в центре Москвы."
+            content={`Сеть хостелов "Уют" предоставляет одни из лучших, бюджетных и уютных хостелов в городе! Мы ждем вас, друзья!`}
+          />
+          <meta
+            name="Keywords"
+            content="дешевый, недорогой хостел, общежитие, хостел, сеть хостелов уют, уют, хостел, дешевое общежитие"
           />
 
           <link href="dist/hamburgers.css" rel="stylesheet" />
