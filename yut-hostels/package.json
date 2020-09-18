@@ -18,6 +18,8 @@
     "react-awesome-slider": "^4.1.0",
     "react-dom": "16.13.1",
     "react-hamburger-menu": "^1.2.1",
+    "react-inner-image-zoom": "^1.1.1",
+    "react-medium-image-zoom": "^4.3.1",
     "react-slick": "^0.27.11",
     "sass": "^1.26.10",
     "slick-carousel": "^1.8.1",

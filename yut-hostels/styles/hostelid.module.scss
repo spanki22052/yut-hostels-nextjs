@@ -1,350 +1,350 @@
 .hostelPage {
-  font-family: "Montserrat", sans-serif;
-  .hostelMainInfo {
-    display: flex;
-    justify-content: space-between;
-    .bookingInfo {
-      width: 50%;
-      max-width: 450px;
-      min-width: 290px;
-      background: #fffaee;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      padding: 10px 30px;
-      .reservation {
-        margin-bottom: 35px;
-        h1 {
-          font-family: Montserrat;
-          font-size: 34px;
-          text-align: center;
+	font-family: "Montserrat", sans-serif;
+	.hostelMainInfo {
+		display: flex;
+		justify-content: space-between;
+		.bookingInfo {
+			width: 50%;
+			max-width: 450px;
+			min-width: 290px;
+			background: #fffaee;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+			padding: 10px 30px;
+			.reservation {
+				margin-bottom: 35px;
+				h1 {
+					font-family: Montserrat;
+					font-size: 34px;
+					text-align: center;
 
-          color: #988a7a;
-        }
+					color: #988a7a;
+				}
 
-        p {
-          font-family: Montserrat;
-          font-size: 20px;
-          text-align: center;
+				p {
+					font-family: Montserrat;
+					font-size: 20px;
+					text-align: center;
 
-          color: #A78966;
-        }
-      }
-      .booking {
-        padding-top: 2px;
-        text-align: center;
-        border-radius: 10px;
-        width: 230px;
-        height: 43px;
-        color: #ffffff;
-        background: #003580;
-        span {
-          color: #2faae1;
-        }
-      }
-    }
-    .hostelInfo {
-      max-width: 730px;
-      margin-left: 60px;
-      display: flex;
-      flex-direction: column;
-      .title {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 54px;
-        line-height: 66px;
-        color: #535048;
-      }
-      .suptitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 41px;
-        color: #bfaf9c;
-      }
-      .freePlaces {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.3);
-        margin-top: 3px;
-      }
-      .progressBar {
-        box-shadow: 0px 1px 4px 1px rgba(152, 138, 122, 0.5);
-        margin: 3px;
-        width: 100%;
-        background: #ffffff;
-        height: 8px;
-        border-radius: 1000px;
-        .progress {
-          background: #988a7a;
-          border-radius: 1000px;
-          height: 100%;
-          width: 75%;
-        }
-      }
-      .procent {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.3);
-      }
-      @media (max-width: 1100px) {
-        .title {
-          font-size: 40px;
-        }
-        .suptitle {
-          font-size: 20px;
-        }
-      }
-      @media (max-width: 890px) {
-        .title {
-          font-size: 30px;
-        }
-        .suptitle {
-          font-size: 16px;
-          line-height: 25px;
-          margin-bottom: 10px;
-        }
-        .freePlaces {
-          font-size: 15px;
-        }
-        .procent {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  @media (max-width: 620px) {
-    .hostelMainInfo {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      .bookingInfo {
-        margin-top: 15px;
-        max-width: 500px;
-        order: 2;
-      }
-      .hostelInfo {
-        margin-left: 0px;
-      }
-    }
-  }
-  .hostelSlider {
-    overflow: visible;
-    margin-top: 35px;
-    background-color: #fffaee;
-    border-radius: 25px;
-    padding: 10px 15px 0 15px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    .sliderItem {
-      margin-left: 20px;
-    }
-    .sliderItem img {
-      height: 250px;
-      width: 300px;
-      object-fit: cover;
-      border-radius: 25px;
-      @media (max-width: 1000px) {
-        width: 200px;
-        height: 150px;
-      }
-      @media (max-width: 600px) {
-        height: 100px;
-        width: 150px;
-      }
-    }
-  }
-  .location {
-    padding-bottom: 20px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    height: 250px;
-    .metro {
-      flex: 1 1 33.333;
-      width: 100%;
-      margin-right: 20px;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 20px;
-      background-color: #fffaee;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .hostelLocation {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #000000;
-        margin-top: 10px;
-      }
-      .stroka {
-        width: 50%;
-        margin-top: 10px;
-        height: 5px;
-        background: #1827a7;
-        margin-bottom: 10px;
-        border-radius: 100px;
-        box-shadow: 0px 0px 6px 1px rgba(24, 39, 167, 0.7);
-      }
-      .metroLocation {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-      }
-    }
-    .priceInfo {
-      width: 100%;
-      flex: 1 1 33.333;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: #fffaee;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      .price {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 42px;
-        line-height: 51px;
-        color: #988a7a;
-      }
-      .priceList {
-        margin-top: 15px;
-        margin-left: 10px;
-        font-weight: 400;
-        color: #988a7a;
-        font-size: 26px;
-      }
-    }
-    .phone {
-      width: 100%;
-      flex: 1 1 33.333;
-      margin-left: 20px;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: #fffaee;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      div {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 42px;
-        line-height: 51px;
-        color: #988a7a;
-      }
-      .phoneInfo {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        justify-content: center;
-        .phoneIcon {
-          @media (min-width: 800px) and (max-width: 1200px) {
-            img {
-              width: 30px;
-            }
-          }
-        }
-        .phoneNum {
-          margin-left: 10px;
-          font-weight: 300;
-          font-size: 35px;
+					color: #a78966;
+				}
+			}
+			.booking {
+				padding-top: 2px;
+				text-align: center;
+				border-radius: 10px;
+				width: 230px;
+				height: 43px;
+				color: #ffffff;
+				background: #003580;
+				span {
+					color: #2faae1;
+				}
+			}
+		}
+		.hostelInfo {
+			max-width: 730px;
+			margin-left: 60px;
+			display: flex;
+			flex-direction: column;
+			.title {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 54px;
+				line-height: 66px;
+				color: #535048;
+			}
+			.suptitle {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 41px;
+				color: #bfaf9c;
+			}
+			.freePlaces {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+				color: rgba(0, 0, 0, 0.3);
+				margin-top: 3px;
+			}
+			.progressBar {
+				box-shadow: 0px 1px 4px 1px rgba(152, 138, 122, 0.5);
+				margin: 3px;
+				width: 100%;
+				background: #ffffff;
+				height: 8px;
+				border-radius: 1000px;
+				.progress {
+					background: #988a7a;
+					border-radius: 1000px;
+					height: 100%;
+					width: 75%;
+				}
+			}
+			.procent {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+				color: rgba(0, 0, 0, 0.3);
+			}
+			@media (max-width: 1100px) {
+				.title {
+					font-size: 40px;
+				}
+				.suptitle {
+					font-size: 20px;
+				}
+			}
+			@media (max-width: 890px) {
+				.title {
+					font-size: 30px;
+				}
+				.suptitle {
+					font-size: 16px;
+					line-height: 25px;
+					margin-bottom: 10px;
+				}
+				.freePlaces {
+					font-size: 15px;
+				}
+				.procent {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	@media (max-width: 620px) {
+		.hostelMainInfo {
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			.bookingInfo {
+				margin-top: 15px;
+				max-width: 500px;
+				order: 2;
+			}
+			.hostelInfo {
+				margin-left: 0px;
+			}
+		}
+	}
+	.hostelSlider {
+		overflow: visible;
+		margin-top: 35px;
+		background-color: #fffaee;
+		border-radius: 25px;
+		padding: 10px 15px 0 15px;
+		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+		.sliderItem {
+			margin-left: 20px;
+		}
+		.sliderItem img {
+			height: 250px;
+			width: 300px;
+			object-fit: cover;
+			border-radius: 25px;
+			@media (max-width: 1000px) {
+				width: 200px;
+				height: 150px;
+			}
+			@media (max-width: 600px) {
+				height: 100px;
+				width: 150px;
+			}
+		}
+	}
+	.location {
+		padding-bottom: 20px;
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		height: 250px;
+		.metro {
+			flex: 1 1 33.333;
+			width: 100%;
+			margin-right: 20px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 20px;
+			background-color: #fffaee;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.hostelLocation {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 29px;
+				text-align: center;
+				color: #000000;
+				margin-top: 10px;
+			}
+			.stroka {
+				width: 50%;
+				margin-top: 10px;
+				height: 5px;
+				background: #1827a7;
+				margin-bottom: 10px;
+				border-radius: 100px;
+				box-shadow: 0px 0px 6px 1px rgba(24, 39, 167, 0.7);
+			}
+			.metroLocation {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: center;
+				color: rgba(0, 0, 0, 0.7);
+			}
+		}
+		.priceInfo {
+			width: 100%;
+			flex: 1 1 33.333;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			background-color: #fffaee;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.price {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 42px;
+				line-height: 51px;
+				color: #988a7a;
+			}
+			.priceList {
+				margin-top: 15px;
+				margin-left: 10px;
+				font-weight: 400;
+				color: #988a7a;
+				font-size: 26px;
+			}
+		}
+		.phone {
+			width: 100%;
+			flex: 1 1 33.333;
+			margin-left: 20px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			background-color: #fffaee;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			div {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 42px;
+				line-height: 51px;
+				color: #988a7a;
+			}
+			.phoneInfo {
+				display: flex;
+				align-items: center;
+				margin-top: 10px;
+				justify-content: center;
+				.phoneIcon {
+					@media (min-width: 800px) and (max-width: 1200px) {
+						img {
+							width: 30px;
+						}
+					}
+				}
+				.phoneNum {
+					margin-left: 10px;
+					font-weight: 300;
+					font-size: 35px;
 
-          @media (min-width: 800px) and (max-width: 1200px) {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    @media (max-width: 1100px) {
-      .metro {
-        padding: 10px;
-      }
-      .phone {
-        padding: 0 5px;
-      }
-    }
-    @media (max-width: 890px) {
-      flex-direction: column;
-      align-items: center;
-      .metro {
-        margin: 0;
-        .metroIcon {
-          margin-top: 20px;
-          height: 50px;
-        }
-        .hostelLocation {
-          font-size: 20px;
-        }
-      }
-      .priceInfo {
-        margin: 20px 0;
-        .price {
-          font-size: 35px;
-        }
-        .priceList {
-          font-size: 27px;
-        }
-      }
-      .phone {
-        margin: 0;
-        div {
-          font-size: 35px;
-        }
-        .phoneInfo {
-          .phoneIcon img {
-            height: 30px;
-          }
-          .phoneNum {
-            font-size: 25px;
-          }
-        }
-      }
-    }
-    @media (max-width: 400px) {
-      .priceInfo {
-        .price {
-          font-size: 30px;
-        }
-        .priceList {
-          font-size: 20px;
-        }
-      }
-      .phone {
-        margin: 0;
-        div {
-          font-size: 30px;
-        }
-        .phoneInfo {
-          justify-content: center;
-          align-items: center;
-          .phoneIcon img {
-            height: 20px;
-            margin-right: 0px;
-          }
-          .phoneNum {
-            font-size: 20px;
-            margin-left: 0px;
-          }
-        }
-      }
-    }
-  }
+					@media (min-width: 800px) and (max-width: 1200px) {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		@media (max-width: 1100px) {
+			.metro {
+				padding: 10px;
+			}
+			.phone {
+				padding: 0 5px;
+			}
+		}
+		@media (max-width: 890px) {
+			flex-direction: column;
+			align-items: center;
+			.metro {
+				margin: 0;
+				.metroIcon {
+					margin-top: 20px;
+					height: 50px;
+				}
+				.hostelLocation {
+					font-size: 20px;
+				}
+			}
+			.priceInfo {
+				margin: 20px 0;
+				.price {
+					font-size: 35px;
+				}
+				.priceList {
+					font-size: 27px;
+				}
+			}
+			.phone {
+				margin: 0;
+				div {
+					font-size: 35px;
+				}
+				.phoneInfo {
+					.phoneIcon img {
+						height: 30px;
+					}
+					.phoneNum {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+		@media (max-width: 400px) {
+			.priceInfo {
+				.price {
+					font-size: 30px;
+				}
+				.priceList {
+					font-size: 20px;
+				}
+			}
+			.phone {
+				margin: 0;
+				div {
+					font-size: 30px;
+				}
+				.phoneInfo {
+					justify-content: center;
+					align-items: center;
+					.phoneIcon img {
+						height: 20px;
+						margin-right: 0px;
+					}
+					.phoneNum {
+						font-size: 20px;
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
 }
