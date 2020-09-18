@@ -19,6 +19,7 @@ export default function AdminPage() {
     pricelist: "",
     badge: "",
     hex: "",
+    adress: "",
   });
 
   const inputStringsHolder = [
@@ -40,6 +41,8 @@ export default function AdminPage() {
     "pricelist",
     "Расшифровка (eng)",
     "badge",
+    "Адрес",
+    "adress",
   ];
 
   const Router = useRouter();
@@ -141,6 +144,7 @@ export default function AdminPage() {
       pricelist: "",
       hex: "",
       badge: "",
+      adress: "",
     });
   };
 
