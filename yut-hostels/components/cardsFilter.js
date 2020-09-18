@@ -13,12 +13,14 @@ export default function CardsFilter({
   const [infoObject, setObject] = useState({});
   const [infoList, setList] = useState([]);
   const [infoBadge, setBadge] = useState({});
-
   const showIt = (el, index) => {
     return (
       <Link key={index} href={`/hostels/${infoObject[el].badge}`}>
         <div className={classes.cardItem}>
-          <img className={classes.cardItemSvg} src="/svg/sleep.svg" />
+          <img
+            className={classes.cardItemSvg}
+            src={`/${infoObject[el].photos[0]}.jpg`}
+          />
           <div className={classes.cardItemContent}>
             <div className={classes.cardItemTitles}>
               <div className={classes.cardItemTitle}>
