@@ -33,7 +33,7 @@ export default function HostelPage({ infoObject }) {
 								Количество свободных мест
               </div>
 							<div className={classes.progressBar}>
-								<div className={classes.progress}></div>
+								<div style={{ width: `${infoObject.peoplePercentage}%`}} className={classes.progress}></div>
 							</div>
 							<div className={classes.procent}>
 								{infoObject.peoplePercentage}%

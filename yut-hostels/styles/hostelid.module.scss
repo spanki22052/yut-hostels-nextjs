@@ -61,10 +61,11 @@
         margin: 3px;
         width: 100%;
         background: #ffffff;
-        height: 5px;
-        border: 0.3px solid #a78966;
+        height: 8px;
+        border-radius: 1000px;
         .progress {
           background: #988a7a;
+          border-radius: 1000px;
           height: 100%;
           width: 75%;
         }
@@ -158,6 +159,7 @@
       }
       .stroka {
         width: 50%;
+        margin-top: 10px;
         height: 5px;
         background: #1827a7;
         margin-bottom: 10px;
@@ -221,6 +223,7 @@
       .phoneInfo {
         display: flex;
         align-items: center;
+        margin-top: 10px;
         justify-content: center;
         .phoneIcon {
           img {
