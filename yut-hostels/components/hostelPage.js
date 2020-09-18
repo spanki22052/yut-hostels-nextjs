@@ -1,5 +1,4 @@
 import classes from "../styles/hostelid.module.scss";
-import Nav from "../components/nav";
 import Slider from "react-slick";
 
 export default function HostelPage({ infoObject }) {
@@ -74,7 +73,7 @@ export default function HostelPage({ infoObject }) {
 								Цена
 							</div>
 							<div className={classes.priceList}>
-								{infoObject.pricelist[0]} р
+								от {infoObject.pricelist[0]}  до {infoObject.pricelist[1]} р
 							</div>
 						</div>
 						<div className={classes.phone}>
