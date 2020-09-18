@@ -20,6 +20,7 @@ export default function AdminPage() {
     badge: "",
     hex: "",
     adress: "",
+    booking: "",
   });
 
   const inputStringsHolder = [
@@ -43,6 +44,8 @@ export default function AdminPage() {
     "badge",
     "Адрес",
     "adress",
+    "Ссылка на booking",
+    "booking",
   ];
 
   const Router = useRouter();
@@ -145,6 +148,7 @@ export default function AdminPage() {
       hex: "",
       badge: "",
       adress: "",
+      booking: "",
     });
   };
 
