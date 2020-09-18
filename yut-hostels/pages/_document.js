@@ -10,6 +10,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="language" content="ru" />
+          <meta name="robots" content="index, follow" />
           <meta
             name="google-site-verification"
             content="FTe50ALqpfNJHROZTMKhdNctXVlC0K7y0XmTkfZh-SE"
