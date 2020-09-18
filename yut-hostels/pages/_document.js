@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta
             name="google-site-verification"
-            content="TRP0wsyEX7Ax48uNjE8ErWw0AU6oW_gFFkyqmnfIVAc"
+            content="FTe50ALqpfNJHROZTMKhdNctXVlC0K7y0XmTkfZh-SE"
           />
           <meta
             name="description"
