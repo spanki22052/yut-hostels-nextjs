@@ -206,7 +206,7 @@
 			}
 		}
 		.priceInfo {
-      width: 100%;
+			width: 100%;
 			flex: 1 1 33.333;
 			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 			background-color: #fffaee;
@@ -316,6 +316,17 @@
 						font-size: 25px;
 					}
 				}
+			}
+		}
+		@media (max-width: 700px) {
+			.metro {
+				min-height: 200px;
+			}
+			.phone {
+				min-height: 200px;
+			}
+			.priceInfo {
+				min-height: 200px;
 			}
 		}
 		@media (max-width: 400px) {
