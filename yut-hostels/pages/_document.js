@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
           <meta name="googlebot" content="noindex" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="googlebot-news" content="nosnippet"/>
+          <meta name="yandex-verification" content="fd16859da2abddbd" />
           <meta
             name="google-site-verification"
             content="FTe50ALqpfNJHROZTMKhdNctXVlC0K7y0XmTkfZh-SE"
