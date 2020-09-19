@@ -22,7 +22,6 @@ export default class MyDocument extends Document {
    });`}
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/67478275" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
           <meta name="language" content="ru"  />
           <meta name="googlebot" content="noindex" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
