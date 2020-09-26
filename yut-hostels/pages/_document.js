@@ -23,7 +23,6 @@ export default class MyDocument extends Document {
 					</script>
 					{/* <noscript><div><img src="https://mc.yandex.ru/watch/67478275" style="position:absolute; left:-9999px;" alt="" /></div></noscript> */}
 					<meta name="language" content="ru" />
-					<meta name="googlebot" content="noindex" />
 					{/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
 					<meta name="googlebot-news" content="nosnippet" />
 					<meta name="yandex-verification" content="fd16859da2abddbd" />
