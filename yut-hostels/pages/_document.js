@@ -21,26 +21,6 @@ export default class MyDocument extends Document {
 								accurateTrackBounce:true
 					});`}
 					</script>
-					<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url>
-  <loc>http://mysite.ru/</loc>
-  <lastmod>2014-09-18T18:54:13+04:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>1.0</priority>
- </url>
- <url>
-  <loc>http://mysite.ru/category/</loc>
-  <lastmod>2014-09-18T18:57:09+04:00</lastmod>
-  <changefreq>hourly</changefreq>
-  <priority>0.8</priority>
- </url>
- <url>
-  <loc>http://mysite.ru/page/</loc>
-  <lastmod>2014-09-18T18:59:37+04:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.6</priority>
- </url>
-</urlset>
 					{/* <noscript><div><img src="https://mc.yandex.ru/watch/67478275" style="position:absolute; left:-9999px;" alt="" /></div></noscript> */}
 					<meta name="language" content="ru" />
 					{/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
